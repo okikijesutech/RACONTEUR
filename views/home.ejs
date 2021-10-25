@@ -1,0 +1,36 @@
+<%- include('partials/header')-%>
+  <header>
+    <div class="header-images">
+      <img src="images/header-image.jpg" alt="">
+    </div>
+    <div class="header-content">
+      <h1>Welcome to the <br><span class="h1-2nd-style">RACONTEUR</span></h1>
+      <p>My name is Folasade. I'm a daughter, a sister,
+      a friend. This blog follows may daily lifestyle, the ups
+      and downs as well as lessons learned. So join me in this rollercoaster
+      ride I call my life.</p>
+    </div>
+  </header>
+  <main>
+    <% posts.forEach(function(post){ %>
+      <div class="container">
+        <p><%= post.category%></p>
+        <h1><%= post.title%></h1>
+        <p><%= post.createdAt.toLocaleDateString()%></p>
+        <p>
+          <%= post.content.substring(0, 200)%>
+          <a href="/posts/<%=post._id%>"><button class="btn" type="button" name="button">Read More</button></a>
+        </p>
+      </div>
+    <% });%>
+  </main>
+  <div class="Subscribe">
+    <p>Hey for more of my daily activies Subscribe to my newsletter</p>
+    <input class="input" type="email" name="email" value="" placeholder="Input your Email">
+    <button class="btn-sub" type="submit" name="button">Subscribe</button>
+  </div>
+
+
+</body>
+
+<%- include('partials/footer')-%>

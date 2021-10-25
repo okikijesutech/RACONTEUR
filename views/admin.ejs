@@ -1,0 +1,21 @@
+<%- include("partials/header")-%>
+  <h1>Hey Blogger</h1>
+  <a href="/compose"><button class="btn" type="button" name="button">NEW BLOG POST</button></a>
+  <a href="/logout"><button class="btn" type="submit" name="button">LOGOUT</button></a>
+
+  <% posts.forEach((post) => { %>
+    <div class="container">
+      <h2><%= post.title%></h2>
+      <p><%= post.createdAt.toLocaleDateString()%></p>
+      <p>
+        <%= post.content.substring(0, 200) + " ..."%>
+        <a href="/posts/<%=post._id%>">Read More</a>
+      </p>
+      <form class="" action="/post/<%=post._id%>?_method=DELETE" method="post">
+        <button class="btn-delete" type="submit" name="button">Delete</button>
+      </form>
+    </div>
+  <% }) %>
+
+
+<%- include("partials/footer")-%>
