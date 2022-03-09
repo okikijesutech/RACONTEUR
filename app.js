@@ -27,7 +27,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb://localhost:27017/blogdb');
+mongoose.connect('mongodb+srv://admin-master:0E4qm7eWBuWEN5tJ@cluster0.7fqac.mongodb.net/raconteur?retryWrites=true&w=majority');
 
 const postSchema = {
   title: String,
