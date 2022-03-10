@@ -1,77 +1,17 @@
-html {
-  min-height: 100%;
-  position: relative;
-}
 body {
-  margin: 0;
-  font-family: sans-serif;
-  color: white;
+  margin:0
 }
 nav {
-  display: flex;
   background: #BA7894;
-  padding: 1%;
-  width: 100%;
 }
-ul {
-  list-style: none;
-  display: flex;
-}
-li a {
-  margin-left: 30px;
-  color: black;
-}
-a {
-  text-decoration: none;
-}
-li a:hover {
-  text-decoration: underline;
-  font-size: 20px;
-  transition: 0.3s;
-}
-main {
-  background: #fff;
-  color: black;
-  padding: 1%;
-}
-header {
-  display: flex;
-  background: #FDE1FA;
-  align-items: center;
-}
-.navbar-header{
-  margin-right: 880px;
-}
-.navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-  font-size: 12px;
-  letter-spacing: 5px;
-}
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
-}
-.navbar-brand img {
-  width: 60px;
+.logo {
+  width: 40px;
 }
 .header-content {
-  color: #785b77;
-  margin-left: 15px;
+   background: #FDE1FA;
+   display: flex;
+   align-items: center;
 }
-.h1-2nd-style {
-  font-size: 45px;
-}
-.header-content p {
-  width: 450px;
-  font-size: 18px;
-}
-.header-images {
-  padding-left: 10%;
-}
-/* this is for each blog post */
 .container {
   border: 3px solid #98c2c0;
   padding: .5%;
@@ -161,33 +101,4 @@ label {
 }
 .about-container {
   padding: 4%;
-}
-/* nav bar continued */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content:hover {
-  display: block;
 }

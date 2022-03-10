@@ -1,15 +1,16 @@
 <%- include('partials/header')-%>
-  <header>
+  <div class="header-content">
     <div class="header-images">
       <img src="images/header-image.jpg" alt="">
     </div>
-    <div class="header-content">
+    <div class="header-text">
       <h1>Welcome to the <br><span class="h1-2nd-style">RACONTEUR</span></h1>
       <p>My name is Folasade. I'm a daughter, a sister,
       a friend. This blog follows may daily lifestyle, the ups
       and downs as well as lessons learned. So join me in this rollercoaster
       ride I call my life.</p>
     </div>
+  </div>
   </header>
   <main>
     <% posts.forEach(function(post){ %>
@@ -29,8 +30,5 @@
     <input class="input" type="email" name="email" value="" placeholder="Input your Email">
     <button class="btn-sub" type="submit" name="button">Subscribe</button>
   </div>
-
-
-</body>
 
 <%- include('partials/footer')-%>
